@@ -1,0 +1,14 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:20000/eureka
+    prefer-ip-address: true
+    instance:
+      instance-id: ${spring.application.name}:${spring.application.instance_id}
+spring:
+  http:
+    multipart:
+      max-file-size:  100MB
+  data:
+    mongodb:
+      database: run-pic

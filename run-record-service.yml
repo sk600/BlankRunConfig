@@ -1,3 +1,7 @@
+spring:
+  data:
+    mongodb:
+      database: run-record
 eureka:
   client:
     service-url:
@@ -5,10 +9,3 @@ eureka:
     prefer-ip-address: true
     instance:
       instance-id: ${spring.application.name}:${spring.application.instance_id}
-#spring:
-#  http:
-#    multipart:
-#      max-file-size:  100MB
-  data:
-    mongodb:
-      database: run-record
